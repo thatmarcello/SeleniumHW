@@ -39,7 +39,7 @@ public class OrderCardTest {
         driver = new ChromeDriver(options);
 
     // 4. проинициализируем с помощью конструктора переменную driver
-        driver = new ChromeDriver();
+//        driver = new ChromeDriver();
     }
 
     //5. еще один метод, в котором будем закрывать браузер и обнулять наш драйвер по сле каждого теста
