@@ -39,6 +39,7 @@ public class OrderCardTest {
 
     // 4. проинициализируем с помощью конструктора переменную driver
         driver = new ChromeDriver();
+        driver.get("http://localhost:9999/"); // запустили браузер на странице localhost:9999
     }
 
     //5. еще один метод, в котором будем закрывать браузер и обнулять наш драйвер по сле каждого теста
@@ -51,7 +52,6 @@ public class OrderCardTest {
     // ЗАДАНИЕ №1
     @Test
     void happyPathTest() throws InterruptedException {
-        driver.get("http://localhost:9999/"); // запустили браузер на странице localhost:9999
         driver.findElement(By.cssSelector("[data-test-id='name'] .input__control")).sendKeys("Марк Яранцев");
         driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+79115552575");
         driver.findElement(By.className("checkbox__box")).click();
